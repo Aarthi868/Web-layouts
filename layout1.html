@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>layout1</title>
+<meta charset="utf-8">
+<style type="text/css">
+*{
+ margin:0px;
+ padding :0px;
+ box-sizing:border-box;
+}
+#logo-div{
+width:100%;
+background-color:lightgreen;
+padding-left:2%;
+min-height:60px;
+line-height:60px;
+font-family:arial;
+margin-bottom:10px;
+}
+#nav-div{
+width:100%;
+background-color:skyblue;
+line-height:60px;
+min-hight:60px;
+font-family:arial;
+text-align:center;
+margin-bottom:10px;
+}
+#Head-Ban{
+width:100%;
+background-color:pink;
+min-height:150px;
+line-height:150px;
+text-align:center;
+margin-bottom:10px;
+}
+#side-div{
+width:20%;
+background-color:yellow;
+min-height:200px;
+line-height:200px;
+text-align:center;
+float : left;
+}
+#bodyarea-div{
+width:75%;
+background-color:lightyellow;
+min-height:200px;
+line-height:200px;
+text-align:center;
+float : right;
+}
+#main-div{
+width:100%;
+margin-bottom:10px;
+
+}
+.clear-fix::after{
+content:"";
+display:block;
+clear:both
+}
+#foot-div{
+width:100%;
+background-color:blue;
+min-heigth:50px;
+line-height:50px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="logo-div">Logo</div>
+<div id="nav-div">Navigation</div>
+<div id="Head-Ban">Header/Banner</div>
+<div id ="main-div" class="clear-fix">
+<div id="side-div">Side bar</div>
+<div id="bodyarea-div">Body Area</div>
+</div>
+<div id="foot-div">Footer</div>
+</body>
+</html>
